@@ -470,6 +470,15 @@ process.stdin
 
 ---
 
+- **TASK_1:** Build an HTTP server that streams a file to the client instead of buffering it.
+  - Serve the file on the `/download` endpoint
+  - Set the appropriate headers: `Content-Type` and `Transfer-Encoding`
+  - Add proper error handling
+
+- **ANSWER FILE:** `server.js`
+
+---
+
 ## Key Takeaways
 
 1. **Streams = process data piece by piece** instead of all at once
