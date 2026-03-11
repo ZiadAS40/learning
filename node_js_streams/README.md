@@ -479,6 +479,15 @@ process.stdin
 
 ---
 
+- **TASK_2:** Create a custom Transform stream that converts CSV rows into JSON objects on the fly using streaming processing.
+  - Use `csv_gen.js` to generate a 10,000-row `data.csv` file
+  - Define a class named `CsvToJsonTransform` that extends the native Node.js `stream.Transform` class
+  - Implement the `_flush(callback)` method to handle any remaining buffered data after the source stream ends
+
+- **ANSWER FILE:** `csv-to-json.js`
+
+---
+
 ## Key Takeaways
 
 1. **Streams = process data piece by piece** instead of all at once
@@ -492,4 +501,4 @@ process.stdin
 
 ---
 
-*Last updated: March 8, 2026*
+*Last updated: March 11, 2026*
